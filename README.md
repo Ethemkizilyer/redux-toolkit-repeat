@@ -722,7 +722,7 @@ const cartSlice = createSlice({
       })
       .addCase(getCartItems.rejected, (state, action) => {
         console.log(action);
-        state.isLoading = false;
+        state.isLoading = true;
       });
   },
 });
